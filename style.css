@@ -1,0 +1,175 @@
+.body {
+  background-color: gray;
+  margin: auto;
+}
+.head {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+}
+.line {
+  height: 3px;
+  width: 1500px;
+  margin: auto;
+  background-color: black;
+  /* border: 0.8px solid black; */
+  margin-bottom: 3%;
+}
+.form {
+  width: 1500px;
+  margin: auto;
+  margin-bottom: 3%;
+  display: grid;
+  border: 1px solid rgb(75, 75, 75);
+  background-color: rgb(201, 201, 201);
+
+  padding-top: 1%;
+  padding-bottom: 1.5%;
+}
+#inp {
+  outline: none;
+  height: 25px;
+  width: 250px;
+  margin: auto;
+  padding-left: 5px;
+  border-radius: 6px;
+  border: 0;
+  margin-bottom: 2%;
+  user-select: none;
+}
+.btn {
+  margin: auto;
+  margin-top: 2%;
+  height: 25px;
+  width: 150px;
+  padding: 0;
+  margin-bottom: 3%;
+  border-radius: 3px;
+
+  border: 1px solid black;
+  outline: none;
+  user-select: none;
+}
+.btn:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  /* background-color: rgb(88, 88, 88); */
+  background-color: rgb(167, 165, 165);
+}
+.btn:not(:hover) {
+  transition: 0.3s;
+}
+.er_name {
+  margin: auto;
+  font-size: 15px;
+  color: #ee3f58;
+  margin-top: 117px;
+  margin-left: 625px;
+  position: absolute;
+}
+.er_sur {
+  font-size: 15px;
+  color: #ee3f58;
+  margin-top: 177px;
+  margin-left: 625px;
+  position: absolute;
+}
+.er_sname {
+  font-size: 15px;
+  color: #ee3f58;
+  margin-top: 236px;
+  margin-left: 625px;
+  position: absolute;
+}
+.er_burth {
+  font-size: 15px;
+  color: #ee3f58;
+  margin-top: 294px;
+  margin-left: 625px;
+  position: absolute;
+}
+.er_year {
+  font-size: 15px;
+  color: #ee3f58;
+  margin-top: 350px;
+  margin-left: 625px;
+  position: absolute;
+}
+.er_fac {
+  font-size: 15px;
+  color: #ee3f58;
+  margin-top: 412px;
+  margin-left: 625px;
+  position: absolute;
+}
+.warning {
+  /* position: absolute; */
+  margin: auto;
+  margin-bottom: 1%;
+  font-size: 20px;
+  color: #ee3f58;
+  display: none;
+}
+.table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  width: 1300px;
+  margin: auto;
+}
+/* #th {
+  border: 2px solid;
+  width: 183px;
+  height: 40px;
+  cursor: pointer;
+} */
+#th:hover {
+  transition: 0.1s;
+  background-color: rgb(167, 165, 165);
+}
+#th:not(:hover) {
+  transition: 0.1s;
+}
+#td {
+  border: 2px solid black;
+}
+tr {
+  text-align: center;
+  height: 30px;
+}
+#th {
+  border: 2px solid;
+  width: 183px;
+  height: 80px;
+  cursor: pointer;
+}
+.inp {
+  outline: none;
+  height: 25px;
+  width: 250px;
+  margin: auto;
+  padding-left: 5px;
+  border-radius: 6px;
+  border: 1px solid black;
+  /* margin-bottom: 2%; */
+  user-select: none;
+}
+/* #select_f {
+  position: absolute;
+  margin-left: 137px;
+  margin-top: 578px;
+}
+#select_fac {
+  position: absolute;
+  margin-left: 465px;
+  margin-top: 578px;
+}
+#select_burth {
+  position: absolute;
+  margin-left: 787px;
+  margin-top: 578px;
+}
+#select_year {
+  position: absolute;
+  margin-left: 1110px;
+  margin-top: 578px;
+} */
