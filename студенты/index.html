@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body">
+    <div class="form">
+      <h1 class="head">Панель управления студентами</h1>
+      <div class="line"></div>
+      <input id="inp" class="names" placeholder="Введите имя" />
+      <input id="inp" class="surname" placeholder="Введите фамилию" />
+      <input id="inp" class="sname" placeholder="Введите отчество" />
+      <input
+        type="date"
+        id="inp"
+        class="burthday"
+        placeholder="Дата рождения"
+      />
+      <input
+        type="number"
+        id="inp"
+        class="year"
+        placeholder="Год начала обучения"
+      />
+      <input id="inp" class="faculty" placeholder="Факультет" />
+      <button class="btn">Добавить студента</button>
+      <h2 class="warning">Совпадений не найдено</h2>
+      <table class="table">
+        <tbody class="tbody">
+          <tr>
+            <th id="th" class="th_fio">
+              ФИО студента
+              <input type="text" id="select_f" class="inp" />
+            </th>
+            <th id="th" class="th_fac">
+              Факультет
+              <input type="text" id="select_fac" class="inp" />
+            </th>
+            <th id="th" class="th_burth">
+              Дата рождения
+              <input type="text" id="select_burth" class="inp" />
+            </th>
+            <th id="th" class="th_year">
+              Год поступления
+              <input type="number" id="select_year" class="inp" />
+            </th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
