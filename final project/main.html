@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <img src="png\logo.svg" alt="" class="logo" />
+      <input type="text" class="header_inp" placeholder="Введите запрос" />
+    </div>
+    <div class="main">
+      <div class="container">
+        <h1 class="main_title">Клиенты</h1>
+        <div class="main_block">
+          <!-- <img class="main_load" src="png\load-purple.svg" alt="" /> -->
+          <div class="main_header">
+            <div class="div_id">
+              <h2 class="head_id">ID</h2>
+              <img class="id_up" src="png\up.svg" alt="" />
+              <img class="id_down" src="png\down.svg" alt="" />
+            </div>
+
+            <div class="div_fio">
+              <h2 class="head_fio">Фамилия Имя Отчество</h2>
+              <img class="fio_up" src="png\up.svg" alt="" />
+              <img class="fio_down" src="png\down.svg" alt="" />
+              <h3>А-Я</h3>
+            </div>
+
+            <div class="div_create">
+              <h2 class="head_create">Дата и время создания</h2>
+              <img class="create_up" src="png\up.svg" alt="" />
+              <img class="create_down" src="png\down.svg" alt="" />
+            </div>
+
+            <div class="div_edit">
+              <h2 class="head_edit">Последние изменения</h2>
+              <img class="edit_up" src="png\up.svg" alt="" />
+              <img class="edit_down" src="png\down.svg" alt="" />
+            </div>
+            <div class="div_contact">
+              <h2 class="head_contact">Контакты</h2>
+            </div>
+            <div class="div_action">
+              <h2 class="head_action">Действия</h2>
+            </div>
+          </div>
+          <div class="table">
+            <!-- <div class="row">
+              <div class="table_id">
+                <h4 class="text_id">12345</h4>
+              </div>
+              <div class="table_fio">
+                <h4 class="text_fio">Скворцов Дени Юрьевич</h4>
+              </div>
+              <div class="table_create">
+                <h4 class="text_date">21.02.2222</h4>
+                <h4 class="text_time">12:43</h4>
+              </div>
+              <div class="table_edit">
+                <h4 class="text_edit_date">22.02.2222</h4>
+                <h4 class="text_edit_time">14:43</h4>
+              </div>
+              <div class="table_contact">
+                <img
+                  class="contact_img"
+                  src="png\vk.svg"
+                  alt=""
+                  draggable="false"
+                />
+              </div>
+              <div class="table_action">
+                <div class="table_action_edit">
+                  <img
+                    class="edit_img"
+                    src="png\edit.svg"
+                    alt=""
+                    draggable="false"
+                  /> -->
+            <!-- <img class="edit_load" src="png\load-purple.svg" alt="" /> -->
+            <!-- <h4 class="text_act_edit">Изменить</h4>
+                </div>
+
+                <div class="table_action_remove">
+                  <img
+                    class="cancel_img"
+                    src="png\cancel.svg"
+                    alt=""
+                    draggable="false"
+                  />
+                  <img class="cancel_load" src="png\load-red.svg" alt="" /> -->
+            <!-- <h4 class="text_act_cancel">Удалить</h4>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="add_client">
+          <img
+            class="add_img"
+            src="png\plus-chel.svg"
+            alt=""
+            draggable="false"
+          />
+          <h4 class="text_add">Добавить клиента</h4>
+        </div>
+      </div>
+    </div>
+    <div class="modal_edit">
+      <div class="edit_con">
+        <img class="edit_cross" src="png\cross.svg" alt="" draggable="false" />
+        <div class="edit_header">
+          <h5 class="edit_title">Изменить данные</h5>
+          <h5 class="edit_id"></h5>
+        </div>
+        <div class="edit_main">
+          <h5 class="edit_sur">Фамилия<span class="zvezda">*</span></h5>
+          <input type="text" class="edit_sur_inp" />
+          <h5 class="edit_name">Имя<span class="zvezda">*</span></h5>
+          <input type="text" class="edit_name_inp" />
+          <h5 class="edit_sname">Отчество</h5>
+          <input type="text" class="edit_sname_inp" />
+        </div>
+        <div class="edit_new_contact">
+          <div class="edit_only_contact">
+            <!-- <div class="edit_full_contact">
+            <div class="edit_back_contact">
+              <div class="edit_contact">
+                <div class="edit_choice_contact">
+                  <h5 class="edit_text_choice">Телефон</h5>
+                  <img class="down2" src="png\down2.svg" alt="" />
+                  <img class="up2" src="png\up2.svg" alt="" />
+                </div>
+                <input
+                  class="edit_choice_inp"
+                  id=""
+                  placeholder="Введите данные контакта"
+                />
+                <div class="edit_cancel_div">
+                  <img class="cancel2" src="png\cancel2.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="edit_spisok">
+              <h6>Доп. телефон</h6>
+              <h6>Email</h6>
+              <h6>Vk</h6>
+              <h6>Facebook</h6>
+            </div>
+          </div> -->
+          </div>
+          <div class="edit_add_contact">
+            <div class="edit_add_button">
+              <img
+                class="edit_plus"
+                src="png\plus.svg"
+                alt=""
+                draggable="false"
+              />
+              <img
+                class="edit_plus2"
+                src="png\plus2.svg"
+                alt=""
+                draggable="false"
+              />
+              <h5 class="text_edit_contact">Добавить контакт</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="edit_footer">
+          <h5 class="edit_warning">Заполните обязательные поля</h5>
+          <div class="edit_save">
+            <!-- <img class="save_load" src="png\load-white.svg" alt="" /> -->
+            <h5 class="edit_text_save">Сохранить</h5>
+          </div>
+          <h5 class="remove_client">Удалить клиента</h5>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="modal_add">
+      <div class="add_con">
+        <img class="add_cross" src="png\cross.svg" alt="" draggable="false" />
+        <div class="add_header">
+          <h5 class="add_title">Новый клиент</h5>
+        </div>
+        <div class="add_main">
+          <h5 class="add_sur">Фамилия<span class="zvezda">*</span></h5>
+          <input type="text" class="add_sur_inp" />
+          <h5 class="add_name">Имя<span class="zvezda">*</span></h5>
+          <input type="text" class="add_name_inp" />
+          <h5 class="add_sname">Отчество</h5>
+          <input type="text" class="add_sname_inp" />
+        </div>
+        <div class="add_new_contact">
+          <div class="add_only_contact">
+            <!-- <div class="add_full_contact">
+              <div class="add_back_contact">
+                <div class="add_contact">
+                  <div class="add_choice_contact">
+                    <h5 class="add_text_choice">Телефон</h5>
+                    <img class="down2" src="png\down2.svg" alt="" />
+                    <img class="up2" src="png\up2.svg" alt="" />
+                  </div>
+                  <input
+                    class="add_choice_inp"
+                    id=""
+                    placeholder="Введите данные контакта"
+                  />
+                  <div class="add_cancel_div">
+                    <img class="cancel2" src="png\cancel2.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="add_spisok">
+                <div class="telephone">
+                  <h6>Доп. телефон</h6>
+                </div>
+                <div class="email">
+                  <h6>Email</h6>
+                </div>
+                <div class="VK">
+                  <h6>Vk</h6>
+                </div>
+                <div class="face">
+                  <h6>Facebook</h6>
+                </div>
+              </div>
+            </div> -->
+          </div>
+          <div class="add_add_contact">
+            <div class="add_add_button">
+              <img
+                class="add_plus"
+                src="png\plus.svg"
+                alt=""
+                draggable="false"
+              />
+              <img
+                class="add_plus2"
+                src="png\plus2.svg"
+                alt=""
+                draggable="false"
+              />
+
+              <h5 class="text_add_contact">Добавить контакт</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="add_footer">
+          <h5 class="add_warning">Заполните обязательные поля</h5>
+          <div class="add_save">
+            <!-- <img class="save_load" src="png\load-white.svg" alt="" /> -->
+            <h5 class="text_save">Сохранить</h5>
+          </div>
+          <h5 class="cancel_client">Отмена</h5>
+        </div>
+      </div>
+    </div>
+    <div class="modal_remove">
+      <div class="remove_con">
+        <img
+          class="remove_cross"
+          src="png\cross.svg"
+          alt=""
+          draggable="false"
+        />
+        <div class="remove_header">
+          <h5 class="remove_title">Удалить клиента</h5>
+          <h5 class="remove_id"></h5>
+        </div>
+        <h5 class="text_confirm">
+          Вы действительно хотите удалить данного клиента?
+        </h5>
+        <div class="remove">
+          <!-- <img class="remove_load" src="png\load-white.svg" alt="" /> -->
+          <h5 class="text_remove">Удалить</h5>
+        </div>
+        <h5 class="remove_cancel">Отмена</h5>
+      </div>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
