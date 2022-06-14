@@ -30,17 +30,16 @@ function createTitle() {
         const data = await response.json();
         const com = data;
         console.log(data);
+        localStorage.setItem("coment", JSON.stringify(com));
       }
       title.addEventListener("click", (e) => {
-        console.log(e.target.textContent);
-        console.log(Number.parseInt(e.target.textContent));
         num = Number.parseInt(e.target.textContent);
+        console.log(num);
         getComents();
 
-        localStorage.setItem("coment", JSON.stringify(com));
         const arr = mas[i];
         localStorage.setItem("article", JSON.stringify(arr));
-        // window.location.href = `desc.html`;
+        window.location.href = `desc.html`;
       });
     }
   }
